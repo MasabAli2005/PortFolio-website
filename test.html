@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <h2>MasabCreations</h2>
+    <ul>
+      <li>Home</li>
+      <li>About us</li>
+      <li>Contact</li>
+      <li>Service</li>
+      <i class="ri-menu-line" id="menu-icon"></i>
+    </ul>
+  </nav>
+  <div class="herosection">
+    <!-- Your hero section content -->
+  </div>
+  
+</body>
+</html>
+<style>
+  nav {
+    background-color: black;
+    color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  border-bottom: 1px solid orange;
+  position: relative;
+  z-index: 3;
+}
+
+nav h2 {
+  font-size: 2rem;
+  color: #333; /* Adjust the color as needed */
+}
+
+ul {
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: orange;
+}
+
+nav i {
+  font-size: 5vw;
+  font-weight: bold;
+  display: none;
+  cursor: pointer;
+}
+
+nav i:hover {
+  color: orange;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  nav i {
+    display: block;
+    color: white;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Adjust the background color as needed */
+  }
+
+  ul li {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  ul li:hover {
+    color: orange;
+  }
+}
+
+.herosection {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+</style>
